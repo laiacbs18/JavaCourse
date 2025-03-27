@@ -53,6 +53,11 @@ public class Student {
     private String color;
     private char sex; // f or m
 
+    // example of static variable, will be used 
+    // among all objects at a class level
+    private static int id = 0;
+    private static String name_of_college = "Standford";
+
     // Getters and Setters
     public String getName() {
         return name;
@@ -84,6 +89,14 @@ public class Student {
 
     public void setSex(char sex) {
         this.sex = sex;
+    }
+
+    public int getId(){
+        return id;
+    }
+
+    public String getNameOfCollege(){
+        return name_of_college;
     }
 
     // Behaviours = Methods
@@ -130,6 +143,9 @@ public class Student {
 
     // default constructor
     public Student() {
+        // testing static var, will increase evert time 
+        // I create an object from Student
+        id++;
     }
 
     // full state constructor
