@@ -4,6 +4,7 @@ public class Marketer extends Employee{
 
     public Marketer(){
         setHours(50);
+        setSalary(5000.0);
     }
 
     public boolean insideMarket(){
@@ -18,9 +19,16 @@ public class Marketer extends Employee{
         by matching argument lists.
     */
 
+    // Override Keyword
+    /*
+        This annotation is used when a subclass provides a 
+        specific implementation of a method that is already 
+        defined in its superclass. 
+    */
+
     @Override
     public int getHours(){
         // make it 50 instead of 40
-        return super.getHours();
+        return 50;
     }
 }

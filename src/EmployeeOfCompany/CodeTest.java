@@ -10,11 +10,14 @@ public class CodeTest {
         Marketer marketer = new Marketer();
 
 
+        System.out.println("employee working hours: " +employee.getHours());
         System.out.println("employee vacation days: " +employee.getVacationDays());
         System.out.println("lawyer special method: " + lawyer.getLawyerPosition());
         System.out.println("Legal secretary salary: " + legalSecretary.getSalary());
         legalSecretary.sayLegalOath();
         System.out.println("marketer special method: " + marketer.insideMarket());
 
+
+        System.out.println("The working hours of marketer are: " + marketer.getHours());
     }
 }
