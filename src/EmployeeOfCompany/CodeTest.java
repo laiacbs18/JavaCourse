@@ -64,5 +64,49 @@ public class CodeTest {
 
         // Comparing the content of the objects
         System.out.println("lawyer2.nameLawyer == lawyer3.nameLawyer: " + (lawyer2.nameLawyer == lawyer3.nameLawyer));
+        
+
+        // Polymorphism
+        /* 
+            Polymorphism is the ability of a single method or 
+            function to operate in different ways based on the 
+            object it is acting on. It allows methods to be defined 
+            in multiple forms, typically through:
+            * method overriding (runtime polymorphism) 
+            * method overloading (compile-time polymorphism)
+            
+            This helps in achieving flexibility and reusability in code.
+
+            Polymorphism allows to get the most out of inheritance,
+            like in the example below all the objects like lawyer,
+            secretary, marketer, etc. are all inheriting from the
+            employee class, so all can be added to an array from the
+            parent class.
+
+            Even though all sub-classes/sub-objects have different behaviours,
+            they can all the same methods.
+
+            The ability to use the same code to be used with several different type
+            of object and for the code to behave differently depending on the object
+            is what is called Polymorphism.
+        */
+
+        Employee[] employees = new Employee[10];
+        employees[0] = lawyer;
+        employees[1] = secretary;
+        employees[2] = marketer;
+        employees[3] = legalSecretary;
+
+        Employee employee2 = new Lawyer(); // will behave like a lawyer object even if its of type employee
+        Employee employee3 = new Secretary();
+        Employee employee4 = new Marketer();
+        Employee employee5 = new LegalSecretary();
+
+        // will behave like a marketer object even if its of type employee
+        // Only the inherited methods are available, the marketer exclusive
+        // methods are not available
+        System.out.println("marketer salary: " + employee4.getSalary()); 
+
+        double k = 5; // This is also Polymorphism as we are saving an Integer in a Double
     }
 }
