@@ -112,5 +112,19 @@ public class CodeTest {
         System.out.println("Inside Market: " + ((Marketer)employee4).insideMarket());
 
         double k = 5; // This is also Polymorphism as we are saving an Integer in a Double
+
+        // Both are design techniques:
+        // inheritance: is used to implement the "is-a" relationship
+        // composition: is used to implement the "has-a" relationship
+
+        /*
+            In our employee example:
+            a marketer, a lawyer is an employee,
+            therefore that is inheritance.
+
+            a marketer, a lawyer has a salary, 
+            therefore that is a composition. 
+        */
+
     }
 }
