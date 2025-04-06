@@ -1,6 +1,6 @@
 package EmployeeOfCompany;
 
-public class CodeTest {
+public class InheritanceTest {
     public static void main(String[] args) {
         // Creation of objects
         Employee employee = new Employee();

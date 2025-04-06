@@ -1,4 +1,4 @@
-package OOP;
+package OOP.Vehicle;
 
 public class Vehicle {
     // Inheritance
@@ -15,6 +15,17 @@ public class Vehicle {
     */
 
     protected String brand = "Ford"; // Vehicle attribute
+    int modelYear;
+    String companyName;
+
+    public Vehicle(int modelYear, String companyName) {
+        this.modelYear = modelYear;
+        this.companyName = companyName;
+    }
+
+    public int calculatePrice(){
+        return 10000;
+    }
 
     public void honk(){
         System.out.println("Piiiip, Piiip");

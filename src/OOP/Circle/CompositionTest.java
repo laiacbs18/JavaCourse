@@ -1,6 +1,6 @@
 package OOP.Circle;
 
-public class CodeTest {
+public class CompositionTest {
 
     // Both are design techniques:
     // inheritance: is used to implement the "is-a" relationship
