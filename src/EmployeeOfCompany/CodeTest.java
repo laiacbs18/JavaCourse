@@ -104,8 +104,12 @@ public class CodeTest {
 
         // will behave like a marketer object even if its of type employee
         // Only the inherited methods are available, the marketer exclusive
-        // methods are not available
+        // methods are not available when used like this unless we use casting
+        // this would not be allowed -> employee.insideMarket();
         System.out.println("marketer salary: " + employee4.getSalary()); 
+
+        // accessing special method through casting
+        System.out.println("Inside Market: " + ((Marketer)employee4).insideMarket());
 
         double k = 5; // This is also Polymorphism as we are saving an Integer in a Double
     }
