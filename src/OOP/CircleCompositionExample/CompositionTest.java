@@ -1,4 +1,4 @@
-package OOP.Circle;
+package OOP.CircleCompositionExample;
 
 public class CompositionTest {
 
