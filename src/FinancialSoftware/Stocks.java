@@ -1,17 +1,27 @@
 package FinancialSoftware;
 
-public class Stocks implements Asset{
+public class Stocks extends ShareAsset{
+
+    private int totalShares;
+
+    public Stocks(String symbol, double currentPrice) {
+        super(symbol, currentPrice);
+        totalShares = 0;
+    }
 
     @Override
     public double getMarketValue() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getMarketValue'");
+        return totalShares * getCurrentPrice();
     }
 
-    @Override
-    public double getProfit() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getProfit'");
+    public int getTotalShares() {
+        return totalShares;
     }
 
+    // Records a purchase of the given number of shares of the
+    // stock at the given price per share
+    public void purchase(int shares, double pricePerShare){
+        totalShares += shares;
+        addCost(shares * pricePerShare);
+    }
 }
