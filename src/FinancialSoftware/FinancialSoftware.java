@@ -36,6 +36,23 @@ public class FinancialSoftware {
             Because different assets compute their market values in 
             different ways: 
                 We use interface: getMarketValue and getProfit
+
+            Similarities between mutual funds and stocks:
+            both store assets that are based on shares
+
+            The methods between mutual funds and stocks
+            are basically the same, the shared asset should not be 
+            instantiated by the user, because it is not really an asset
+            the user can buy, it just represents a concept. This is why
+            the SharedAsset class should be of type abstract.
+
+            Unlike an interface, abstract classes can declare fields
+            and implement methods with bodies, so the SharedAsset class
+            can retain the code it has.
         */ 
+
+        //Testing the code
+        Asset asset = new MutualFunds("AMZ", 300);
+        System.out.println("Market Value: " + asset.getMarketValue());
     }
 }
