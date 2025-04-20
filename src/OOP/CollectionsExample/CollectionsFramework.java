@@ -1,4 +1,4 @@
-package OOP;
+package OOP.CollectionsExample;
 
 public class CollectionsFramework {
     public static void main(String[] args) {

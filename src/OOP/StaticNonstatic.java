@@ -1,6 +1,8 @@
 package OOP;
 
-public class StaticNonstatic {
+import OOP.WorkingWithObjects.Student;
+
+public class StaticNonStatic {
     // Types of variables
     /* 
         * Local variables (non static)
