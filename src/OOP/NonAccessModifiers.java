@@ -1,5 +1,7 @@
 package OOP;
 
+import OOP.WorkingWithObjects.Student;
+
 // public class NonAccessModifiers extends FinalTest { // cannot subclass a final class
 public class NonAccessModifiers {
     /*

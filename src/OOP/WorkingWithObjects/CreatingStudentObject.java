@@ -1,4 +1,4 @@
-package OOP;
+package OOP.WorkingWithObjects;
 
 public class CreatingStudentObject {
     public static void main(String[] args) {
