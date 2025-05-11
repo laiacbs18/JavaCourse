@@ -46,5 +46,12 @@ public class CollectionsFramework {
             So choosing the right implementation for your program involves
             knowing how to it will be used as well as what is available.
         */
+
+        // Collection Interface
+         /* 
+            The interface Collection defines the 
+            core functionality that we expect of
+            any collection other than a map. 
+        */
     }
 }
